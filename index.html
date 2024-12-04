@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="word"></div>
+      <div class="userTypedWord"></div>
+      <div class="keyboard">
+        <div class="firstRow">
+          <button class="letter" id="q">q</button>
+          <button class="letter" id="w">w</button>
+          <button class="letter" id="e">e</button>
+          <button class="letter" id="r">r</button>
+          <button class="letter" id="t">t</button>
+          <button class="letter" id="y">y</button>
+          <button class="letter" id="u">u</button>
+          <button class="letter" id="i">i</button>
+          <button class="letter" id="o">o</button>
+          <button class="letter" id="p">p</button>
+        </div>
+        <div class="secondRow">
+          <button class="letter" id="a">a</button>
+          <button class="letter" id="s">s</button>
+          <button class="letter" id="d">d</button>
+          <button class="letter" id="f">f</button>
+          <button class="letter" id="g">g</button>
+          <button class="letter" id="h">h</button>
+          <button class="letter" id="j">j</button>
+          <button class="letter" id="k">k</button>
+          <button class="letter" id="l">l</button>
+        </div>
+        <div class="thirdRow">
+          <button class="letter" id="z">z</button>
+          <button class="letter" id="x">x</button>
+          <button class="letter" id="c">c</button>
+          <button class="letter" id="v">v</button>
+          <button class="letter" id="b">b</button>
+          <button class="letter" id="n">n</button>
+          <button class="letter" id="m">m</button>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="correctWord">Correct Word: 0</div>
+        <div class="missWord">Miss Word: 0</div>
+        <div class="wpm">WPM: 0</div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="start">
+        <h2>Welcome!</h2>
+        <p>Choose difficulty</p>
+        <form action=""></form>
+        <input type="radio" name="level" id="easy" value="easy" checked />
+        <label for="easy">Easy: 3 letters</label>
+        <input type="radio" name="level" id="medium" value="medium" />
+        <label for="medium">Medium: 7 letters</label>
+        <input type="radio" name="level" id="hard" value="hard" />
+        <label for="hard">Hard: 10 letters</label>
+        <button onclick="play()" class="plat">Play</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
